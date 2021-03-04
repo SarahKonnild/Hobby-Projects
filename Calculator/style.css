@@ -1,0 +1,94 @@
+body{
+    background-color: white;
+}
+
+#calculator{
+    position: absolute;
+    max-width: 60%;
+    left: 60%;
+    top: 10%;
+}
+
+.operator{
+    background-color: #cbac3b !important;
+}
+
+.operator:hover{
+    background-color: #ffffff !important;
+}
+
+.extra{
+    background-color: #5aa89b !important;
+}
+
+.extra:hover{
+    background-color: #ffffff !important;
+}
+
+.trig{
+    background-color: #5aa89b !important;
+}
+
+.trig:hover{
+    background-color: #ffffff !important;
+}
+
+#clear{
+    background-color: #a85a5a !important;
+}
+
+#clear:hover{
+    background-color: #ffffff !important;
+}
+
+.alt{
+    background-color: darkgrey !important;
+}
+
+.alt:hover{
+    background-color: #fff !important;
+}
+
+input{
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    width:60px;
+    height:60px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0,0,0,0,0.2);
+    border-radius: 5px;
+
+}
+
+input:hover{
+    border: 0 solid #000;
+    color: #495069;
+    background-color: #cbac3b;
+    border-radius: 4px;
+}
+
+#answer{
+    width: 337px;
+    font-size: 26px;
+    text-align: center;
+    background-color: #ffffff;
+    float: left;
+    border-radius: 5px;
+}
+
+table{
+    margin: auto;
+    background-color: darkgrey;
+    width: 360px;
+    height: 360px;
+    text-align: center;
+    border-radius: 5px;
+}
+

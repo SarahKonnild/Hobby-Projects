@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Calculator App!</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <form name="calculator" id="calc">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="input" size="16" id="answer">
+                    <br>
+                    <input type="button" class="extra" id="10x" name="10x" value="10ˣ" onclick="calculator.input.value = calc10(calculator.input.value)">
+                    <input type="button" class="trig" id="sin" name="sin" value="sin" onclick="calculator.input.value = calcSin(calculator.input.value)">
+                    <input type="button" class="trig" id="cos" name="cos" value="cos" onclick="calculator.input.value = calcCos(calculator.input.value)">
+                    <input type="button" class="trig" id="tan" name="tan" value="tan" onclick="calculator.input.value = calcTan(calculator.input.value)">
+                    <input type="button" id="clear" name="clear" value="C" onclick="calculator.input.value = ''">
+                    <br>
+                    <input type="button" class="extra" id="log" name="log" value="log₁₀" onclick="calculator.input.value = calcLog(calculator.input.value)">
+                    <input type="button" name="one" value="1" onclick="calculator.input.value += '1'">
+                    <input type="button" name="two" value="2" onclick="calculator.input.value += '2'">
+                    <input type="button" name="three" value="3" onclick="calculator.input.value += '3'">
+                    <input type="button" class="operator" name="plus" value="+" onclick=" calculator.input.value += '+'">
+                    <br>
+                    <input type="button" class="extra" id="ln" name="ln" value="ln" onclick="calculator.input.value = calcLn(calculator.input.value)">
+                    <input type="button" name="four" value="4" onclick="calculator.input.value += '4'">
+                    <input type="button" name="five" value="5" onclick="calculator.input.value += '5'">
+                    <input type="button" name="six" value="6" onclick="calculator.input.value += '6'">
+                    <input type="button" class="operator" name="minus" value="-" onclick="calculator.input.value += '-'">                    
+                    <br>
+                    <input type="button" class="extra" id="sqrt" name="sqrt" value="√" onclick="calculator.input.value = calcRoot(calculator.input.value)">
+                    <input type="button" name="seven" value="7" onclick="calculator.input.value += '7'">
+                    <input type="button" name="eight" value="8" onclick="calculator.input.value += '8'">
+                    <input type="button" name="nine" value="9" onclick="calculator.input.value += '9'">
+                    <input type="button" class="operator" name="multiply" value="*" onclick="calculator.input.value += '*'">
+                    <br>
+                    <input type="button" class="extra" id="square" name="square" value="x²" onclick="calculator.input.value = calcSquare(calculator.input.value)">
+                    <input type="button" class="period" name="period" value="." onclick="calculator.input.value += '.'">
+                    <input type="button" name="zero" value="0" onclick="calculator.input.value += '0'">
+                    <input type="button" class="operator" name="equals" value="=" onclick="calculator.input.value=eval(calculator.input.value)">
+                    <input type="button" class="operator" name="divide" value="/" onclick="calculator.input.value += '/'">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</html>
